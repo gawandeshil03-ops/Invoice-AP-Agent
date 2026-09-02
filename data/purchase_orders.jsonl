@@ -1,0 +1,5 @@
+{"po_id": "PO-5001", "vendor": "Acme Corp", "lines": [{"sku": "WIDGET-A", "quantity": 10, "unit_price": 5.0, "amount": 50.0}, {"sku": "WIDGET-B", "quantity": 2, "unit_price": 20.0, "amount": 40.0}]}
+{"po_id": "PO-5002", "vendor": "Globex", "lines": [{"sku": "GADGET-X", "quantity": 5, "unit_price": 100.0, "amount": 500.0}]}
+{"po_id": "PO-5003", "vendor": "Initech", "lines": [{"sku": "BOLT", "quantity": 100, "unit_price": 0.5, "amount": 50.0}]}
+{"po_id": "PO-5004", "vendor": "Umbrella", "lines": [{"sku": "VIAL", "quantity": 20, "unit_price": 15.0, "amount": 300.0}]}
+{"po_id": "PO-5005", "vendor": "BigCo", "lines": [{"sku": "SERVER", "quantity": 10, "unit_price": 800.0, "amount": 8000.0}]}

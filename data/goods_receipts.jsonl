@@ -1,0 +1,5 @@
+{"po_id": "PO-5001", "received": {"WIDGET-A": 10, "WIDGET-B": 2}}
+{"po_id": "PO-5002", "received": {"GADGET-X": 5}}
+{"po_id": "PO-5003", "received": {"BOLT": 100}}
+{"po_id": "PO-5004", "received": {"VIAL": 20}}
+{"po_id": "PO-5005", "received": {"SERVER": 10}}

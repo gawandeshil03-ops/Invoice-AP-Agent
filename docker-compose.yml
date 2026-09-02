@@ -1,0 +1,10 @@
+services:
+  eval:
+    build: .
+    image: invoice-ap-agent:latest
+    command: ["eval"]
+
+  run:
+    build: .
+    image: invoice-ap-agent:latest
+    command: ["run"]

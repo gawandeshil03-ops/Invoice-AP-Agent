@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "invoice-ap-agent"
+version = "0.1.0"
+description = "An accounts-payable agent that knows when not to be an agent: LLM-style extraction of messy invoices, deterministic 3-way match (invoice/PO/receipt), policy checks, and human-in-the-loop for exceptions — with a safety gate that no bad invoice is ever auto-approved. Fully offline."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Taha Siddiqui", email = "work.tahasiddiqui@gmail.com" }]
+keywords = [
+  "ai-agents", "agentic-workflow", "accounts-payable", "invoice-processing",
+  "three-way-match", "human-in-the-loop", "structured-extraction", "finance-automation",
+  "deterministic", "llmops", "python",
+]
+classifiers = [
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+  "pydantic>=2.7",
+  "pydantic-settings>=2.2",
+  "rich>=13.7",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.30"]
+anthropic = ["anthropic>=0.30"]
+dev = ["ruff>=0.6", "pytest>=8.2", "pre-commit>=3.7"]
+
+[project.scripts]
+ap-agent = "ap_agent.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/tahasiddiquii/invoice-ap-agent"
+Source = "https://github.com/tahasiddiquii/invoice-ap-agent"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ap_agent"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4"]
+ignore = ["E501", "B008", "UP042"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+addopts = "-q"
+testpaths = ["tests"]
