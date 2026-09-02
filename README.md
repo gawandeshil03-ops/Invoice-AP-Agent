@@ -104,18 +104,3 @@ data/   purchase_orders.jsonl · goods_receipts.jsonl · invoices.jsonl
 reports/ audit_report_example.md
 ```
 
-## Related repositories
-
-Part of a portfolio on production ML & LLM engineering:
-
-- [ai-harness](https://github.com/tahasiddiquii/ai-harness): multi-stage agent harness.
-- [llm-eval-observability](https://github.com/tahasiddiquii/llm-eval-observability): RAG evaluation and observability.
-- [llm-guardrails-redteam](https://github.com/tahasiddiquii/llm-guardrails-redteam): guardrails and red-teaming.
-- [hybrid-graph-rag](https://github.com/tahasiddiquii/hybrid-graph-rag): hybrid and graph retrieval benchmark.
-- [support-copilot](https://github.com/tahasiddiquii/support-copilot): customer-support agentic workflow.
-- [timeseries-forecasting](https://github.com/tahasiddiquii/timeseries-forecasting): classic ML forecasting benchmark.
-- **invoice-ap-agent**: this repo.
-
-## License
-
-MIT © 2026 Taha Siddiqui
