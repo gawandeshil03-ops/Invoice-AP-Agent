@@ -95,12 +95,4 @@ violated. (All numbers are produced by the run, never hand-written.)
 - **Pluggable extraction.** `rules` (offline, default) to `openai`/`anthropic`, behind one
   interface, with the model output validated by the `Invoice` schema.
 
-## Layout
-
-```
-src/ap_agent/
-  extraction · ledger · matching · policy · pipeline · review · evals · cli
-data/   purchase_orders.jsonl · goods_receipts.jsonl · invoices.jsonl
-reports/ audit_report_example.md
-```
 
